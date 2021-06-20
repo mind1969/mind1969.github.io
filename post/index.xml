@@ -13,7 +13,8 @@
       <pubDate>Mon, 14 Jun 2021 02:25:54 +0800</pubDate>
       
       <guid>https://mind1969.github.io/post/blog/</guid>
-      <description></description>
+      <description>个人博客搭建 安装hugo brew install hugo //安装 hugo -version //查看版本确定是否安装成功 用hugo生成个人博客 hugo new site myblog //生成博客 myblog是文件夹名称 下载并设置主题 主题地址： https://themes.gohugo.io
+cd myblog //进入到博客根目录 git clone XXX 在本地启动个人博客 hugo server -t m10c(主题名) --buildDrafts //在本地启动个人博客 实际来写一篇文章 hugo new post/blog.md //blog.md文件会在 content/post目录下 将个人博客部署到远端服务器 hugo --themes=m10c --baseUrl=&amp;#34;https://mind1969.github.io/&amp;#34; --buildDrafts cd public/ git init git add git commit -m &amp;#34;我的第一次Hugo博客提交&amp;#34; git remote add origin https://github.com/mind1969/mind1969.github.io.git git push -u origin master </description>
     </item>
     
   </channel>
