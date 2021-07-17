@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mind1969.github.io/post/blog/</loc>
-    <lastmod>2021-06-14T02:25:54+08:00</lastmod>
-  </url><url>
     <loc>https://mind1969.github.io/</loc>
-    <lastmod>2021-06-14T02:25:54+08:00</lastmod>
+    <lastmod>2021-07-17T15:50:23+08:00</lastmod>
   </url><url>
     <loc>https://mind1969.github.io/post/</loc>
+    <lastmod>2021-07-17T15:50:23+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2021-07-17T15:50:23+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/react%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-07-03T15:59:36+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/dubbo/</loc>
+    <lastmod>2021-06-21T23:41:34+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2021-06-21T00:30:18+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/%E5%A6%82%E4%BD%95%E7%8E%A9%E8%BD%AC%E4%B8%80%E4%B8%AA%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2021-06-20T18:30:45+08:00</lastmod>
+  </url><url>
+    <loc>https://mind1969.github.io/post/blog/</loc>
     <lastmod>2021-06-14T02:25:54+08:00</lastmod>
   </url><url>
     <loc>https://mind1969.github.io/categories/</loc>

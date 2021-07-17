@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>计算机组成原理 // My New Hugo Site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://mind1969.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="计算机组成原理"/>
+<meta name="twitter:description" content="第一章 概论 1.1 计算机的基本概念 电子计算机————是一种可以存储程序,并且通过执行程序指令，可以自动、高速、精确地对数字信息进行各种复杂处理，然后输出运算结果的高科技智能电子设备。
+5个逻辑模块： 1.1.1 信息的数字化表示 1.在计算机中用数字代码（二进制代码）表示各种信息 例1 用数字代码表示数据
+5 表示为 0 101
+-5 表示为 1 101
+例2 用数字代码表示字符
+A 表示为 01000001
+B 表示为 01000010
+例3 用数字代码表示命令、状态
+启动 表示为 00
+停止 表示为 01
+正在工作 表示为 10 工作结束 表示为 11
+2.在物理机制上用数字信号（数字型电信号）表示数字代码 3.信息数字化表示的优点 （1）物理上易实现信息的表示与存储
+（2）抗干扰能力强，可靠性高
+（3）数值的表示范围大，精度高
+（4）可表示的信息类型广泛
+（5）能用数字逻辑技术进行处理
+因此，计算机中采用二进制形式表示信息
+1.1.2 存储程序工作方式 1.编制程序
+2.存储程序
+3.自动、连续执行程序
+4.输出结果
+计算机的工作流程 1.1.3 计算机的分类 计算机从总体上来说分为两大类：模拟计算机和数字计算机。
+各自主要特点：
+ 模拟计算机：有模拟运算器件构成，处理在时间和数值上连续的模拟量（如：电压、电流等）； 数字计算机：由数字逻辑器件构成，处理离散的数字量  其中数字计算机又可分为：专用计算机和通用计算机
+ 专用机————是以快速、经济和高度集成度为主要指标的特殊计算机，它是针对特定任务设计的计算机，适应性较差（如：工控机、ATM等） 通用机————适应性较高，但是牺牲了效率、速度和经济性，如个人电脑。  按照系统规模和计算能力，也可以分为：巨型机（超算）、大型机 、小型机 、微型机等等"/>
+
+    <meta property="og:title" content="计算机组成原理" />
+<meta property="og:description" content="第一章 概论 1.1 计算机的基本概念 电子计算机————是一种可以存储程序,并且通过执行程序指令，可以自动、高速、精确地对数字信息进行各种复杂处理，然后输出运算结果的高科技智能电子设备。
+5个逻辑模块： 1.1.1 信息的数字化表示 1.在计算机中用数字代码（二进制代码）表示各种信息 例1 用数字代码表示数据
+5 表示为 0 101
+-5 表示为 1 101
+例2 用数字代码表示字符
+A 表示为 01000001
+B 表示为 01000010
+例3 用数字代码表示命令、状态
+启动 表示为 00
+停止 表示为 01
+正在工作 表示为 10 工作结束 表示为 11
+2.在物理机制上用数字信号（数字型电信号）表示数字代码 3.信息数字化表示的优点 （1）物理上易实现信息的表示与存储
+（2）抗干扰能力强，可靠性高
+（3）数值的表示范围大，精度高
+（4）可表示的信息类型广泛
+（5）能用数字逻辑技术进行处理
+因此，计算机中采用二进制形式表示信息
+1.1.2 存储程序工作方式 1.编制程序
+2.存储程序
+3.自动、连续执行程序
+4.输出结果
+计算机的工作流程 1.1.3 计算机的分类 计算机从总体上来说分为两大类：模拟计算机和数字计算机。
+各自主要特点：
+ 模拟计算机：有模拟运算器件构成，处理在时间和数值上连续的模拟量（如：电压、电流等）； 数字计算机：由数字逻辑器件构成，处理离散的数字量  其中数字计算机又可分为：专用计算机和通用计算机
+ 专用机————是以快速、经济和高度集成度为主要指标的特殊计算机，它是针对特定任务设计的计算机，适应性较差（如：工控机、ATM等） 通用机————适应性较高，但是牺牲了效率、速度和经济性，如个人电脑。  按照系统规模和计算能力，也可以分为：巨型机（超算）、大型机 、小型机 、微型机等等" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mind1969.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-17T15:50:23&#43;08:00" />
+<meta property="article:modified_time" content="2021-07-17T15:50:23&#43;08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://mind1969.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">计算机组成原理</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 17, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="第一章--概论">第一章  概论</h1>
+<h2 id="11-计算机的基本概念">1.1 计算机的基本概念</h2>
+<p>电子计算机————是一种可以<strong>存储程序</strong>,并且通过<strong>执行程序指令</strong>，可以自动、高速、精确地对数字信息进行各种<strong>复杂处理</strong>，然后<strong>输出运算结果</strong>的高科技<strong>智能</strong>电子设备。</p>
+<p>5个逻辑模块：
+<img src="/image/img.png" alt="avatar"></p>
+<h3 id="111-信息的数字化表示">1.1.1 信息的数字化表示</h3>
+<h4 id="1在计算机中用数字代码二进制代码表示各种信息">1.在计算机中用<strong>数字代码</strong>（二进制代码）表示各种信息</h4>
+<p>例1 用数字代码表示数据<br>
+5 表示为 <em>0</em> 101<br>
+-5 表示为 <em>1</em> 101<br>
+例2 用数字代码表示字符<br>
+A  表示为 01000001<br>
+B  表示为 01000010</p>
+<p>例3  用数字代码表示命令、状态<br>
+启动  表示为 00<br>
+停止  表示为 01<br>
+正在工作  表示为 10
+工作结束  表示为 11</p>
+<h4 id="2在物理机制上用数字信号数字型电信号表示数字代码">2.在物理机制上用<strong>数字信号</strong>（数字型电信号）表示数字代码</h4>
+<p><img src="/image/img_01.png" alt="img.png"></p>
+<h4 id="3信息数字化表示的优点">3.信息数字化表示的优点</h4>
+<p>（1）物理上易实现信息的表示与存储<br>
+（2）抗干扰能力强，可靠性高<br>
+（3）数值的表示范围大，精度高<br>
+（4）可表示的信息类型广泛<br>
+（5）能用数字逻辑技术进行处理<br>
+因此，计算机中采用二进制形式表示信息</p>
+<h3 id="112-存储程序工作方式">1.1.2 存储程序工作方式</h3>
+<p>1.编制程序<br>
+2.存储程序<br>
+3.自动、连续执行程序<br>
+4.输出结果</p>
+<p><strong>计算机的工作流程</strong>
+<img src="/image/img_1.png" alt="img_1.png"></p>
+<h3 id="113-计算机的分类">1.1.3 计算机的分类</h3>
+<p>计算机从总体上来说分为两大类：<strong>模拟计算机</strong>和<strong>数字计算机</strong>。</p>
+<p>各自主要特点：</p>
+<ul>
+<li>模拟计算机：有模拟运算器件构成，处理在时间和数值上连续的模拟量（如：电压、电流等）；</li>
+<li>数字计算机：由数字逻辑器件构成，处理离散的数字量</li>
+</ul>
+<p>其中数字计算机又可分为：<strong>专用计算机</strong>和<strong>通用计算机</strong></p>
+<ul>
+<li>专用机————是以快速、经济和高度集成度为主要指标的特殊计算机，它是针对<strong>特定任务</strong>设计的计算机，适应性较差（如：工控机、ATM等）</li>
+<li>通用机————适应性较高，但是牺牲了<strong>效率</strong>、<strong>速度</strong>和<strong>经济性</strong>，如个人电脑。</li>
+</ul>
+<p>按照<strong>系统规模</strong>和<strong>计算能力</strong>，也可以分为：巨型机（超算）、大型机 、小型机 、微型机等等</p>
+<ul>
+<li>它们的系统规模和计算能力依次递减。</li>
+<li>随着超大规模集成电路技术的不断法杖，类型的划分会动态变化。
+<img src="/image/img_2.png" alt="img_2.png"></li>
+</ul>
+<h2 id="12-计算机的诞生和发展">1.2 计算机的诞生和发展</h2>
+<p><img src="/image/img_3.png" alt="img_3.png">
+<img src="/image/img_4.png" alt="img_4.png"></p>
+<h3 id="121-冯诺依曼体系">1.2.1 冯~诺依曼体系</h3>
+<h4 id="1用二进制代码表示程序和数据">1.用二进制代码表示程序和数据</h4>
+<p>任何复杂运算和操作都转换成用二进制代码表示的指令，数据也用二进制代码来表示</p>
+<h4 id="2采用存储程序的工作方式">2.采用存储程序的工作方式</h4>
+<p>将程序和数据存存储起来（存储程序），让计算机自动地执行指令，完成各种复杂的运算操作（核心思想）。</p>
+<h4 id="3新型的现代计算机硬件组成">3.新型的现代计算机硬件组成</h4>
+<ul>
+<li>存储器</li>
+<li>运算器</li>
+<li>控制器</li>
+<li>输入和输出设备</li>
+</ul>
+<p><strong>冯~诺依曼体系</strong><br>
+奠定了现代电子计算机的理论基础</p>
+<h3 id="121-计算机的发展历程">1.2.1 计算机的发展历程</h3>
+<p><img src="/image/img_5.png" alt="img_5.png"></p>
+<h3 id="123-未来的发展趋势">1.2.3 未来的发展趋势</h3>
+<p><img src="/image/img_6.png" alt="img_6.png"></p>
+<h2 id="13-计算机系统的组织">1.3 计算机系统的组织</h2>
+<ul>
+<li>硬件————是指构成计算机系统的实体和装置之类的有形设备，是组成计算机系统的物质基础。</li>
+<li>软件————是指由硬件所表达的各种内在信息，包括数据与控制程序。因为它们是无形的东西，所以称为软件或软设备。</li>
+</ul>
+<h3 id="131-计算机的硬件系统组成">1.3.1 计算机的硬件系统组成</h3>
+<h4 id="1硬件系统的基本组成模型">1.硬件系统的基本组成模型</h4>
+<p><img src="/image/img_7.png" alt="img_7.png"></p>
+<ul>
+<li>
+<p>主要功能部件</p>
+<ul>
+<li>
+<p><strong>CPU</strong> 主要由<strong>运算器</strong>、<strong>控制器</strong>等部件组成<br>
+（1）运算器<br>
+功能：完成两类（<strong>算术和逻辑</strong>）运算 <br>
+组成特点：<br>
+1.主要由ALU（<strong>算术逻辑单元</strong>）构成，执行算术、逻辑运算以及移位循环等操作，是CPU功能的主要执行部件。<br>
+2.ALU以<strong>全加器</strong>为核心，具有多种运算功能。<br>
+3.运算的<strong>位数越多</strong>，计算<strong>精度就越高</strong>，但器件也更复杂。 <br>
+4.运算器的数据宽度一般是： 8位、16位、32位或64位。<br>
+(2)控制器<br>
+1.功能：产生控制命令（微命令），控制全机操作。<br>
+2.基本组成：
+<img src="/image/img_8.png" alt="img_8.png"></p>
+</li>
+<li>
+<p><strong>存储器</strong><br>
+1）功能：存储数据和数字化后的程序。<br>
+<strong>【注意】</strong> 不论是数据，还是程序，存储器存储的全是用0或1表示的<strong>二进制代码</strong>。<br>
+存储器设涉及到几个基本概念：<br>
+<strong>存储单元</strong>：在存储器中保存一个n位二进制数的n个<strong>存储电路</strong>，组成一个<strong>存储单元</strong>。<br>
+<strong>地址</strong>： 存储器由许多存储单元组成，每个存储单元的编号，称为地址。<br>
+<strong>存储容量</strong>： 存储器所有存储单元的总数。<br>
+<strong>内存储器</strong>： 即主存，是一种用来存放直接为CPU提供服务的程序和数据存储器。<br>
+<strong>外存储器</strong>： 即辅存，为计算机配备的存储容量很大的辅助存储器。</p>
+</li>
+<li>
+<p><strong>输入输出设备</strong><br>
+<strong>功能</strong>： 执行输入、输出信息的转换<br>
+<strong>输入时</strong>： 原始信息——&gt;二进制代码，送入主机<br>
+<strong>输出时</strong>： 处理结果（二进制代码）——&gt; 用户能够直接感知的形式（字符、图像、声音），并输出给用户</p>
+</li>
+<li>
+<p><strong>总线(Bus)</strong><br>
+能为多个部件分时共享的一组信息传送通路。<br>
+根据传送的信息不同，可分三类：</p>
+<ol>
+<li>传送各种<strong>数据信息</strong>的<strong>数据总线</strong>（Data Bus）；</li>
+<li>传送各种<strong>地址信息</strong>的<strong>地址总线</strong>（Address Bus）；</li>
+<li>传送各种<strong>控制信号</strong>的<strong>控制总线</strong>（Control Bus）;</li>
+</ol>
+</li>
+<li>
+<p><strong>接口</strong><br>
+外设的种类、数量多变，为了将总线与各类外设连接，须在两者之间设置一些部件，具有<strong>缓冲</strong>、<strong>转换</strong>、<strong>连接</strong>等功能，这些部件就是<strong>接口</strong>
+<img src="/image/img_9.png" alt="img_9.png"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>计算机硬件的典型架构<br>
+-微型计算机：南-北桥架构
+<img src="/image/img_10.png" alt="img_10.png"></p>
+</li>
+</ul>
+<ul>
+<li>
+<p>小型计算机：<strong>多处理器</strong>架构
+<img src="/image/img_11.png" alt="img_11.png"></p>
+</li>
+<li>
+<p>超级计算机（超算）：集群式架构
+<img src="/image/img_12.png" alt="img_12.png">
+<img src="/image/img_13.png" alt="img_13.png"></p>
+</li>
+</ul>
+<p><strong>多处理机系统结构</strong><br>
+<strong>特点</strong>： 用多处理器CPU构成<br>
+根据处理器之间连接的紧密程度，又分为：</p>
+<ol>
+<li>紧密偶合型多机系统</li>
+<li>松散耦合型多机系统</li>
+</ol>
+<ul>
+<li>
+<p>紧密耦合型多机系统
+<img src="/image/img_14.png" alt="img_14.png"></p>
+</li>
+<li>
+<p>松散耦合多机系统
+<img src="/image/img_15.png" alt="img_15.png"></p>
+</li>
+</ul>
+<h3 id="132-软件系统">1.3.2 软件系统</h3>
+<p>软件系统： <strong>系统程序</strong>和<strong>应用程序</strong>。</p>
+<ul>
+<li><strong>系统程序</strong>： 负责系统调度管理，提供运行和开发环境、各种服务，确保系统运行良好。</li>
+<li><strong>应用程序</strong>： 利用计算机来解决应用问题所编制的程序，如工程设计程序、数据处理程序、自动控制程序、企业管理程序、情报检索程序、科学计算程序等等。</li>
+</ul>
+<h3 id="133-软件系统层次结构">1.3.3 软件系统层次结构</h3>
+<p>计算机系统是一个由多层次的软件+硬件组成的系统，基本结构如下图所示：
+<img src="/image/img_16.png" alt="img_16.png"></p>
+<h3 id="134-软件与硬件的逻辑等价性">1.3.4 软件与硬件的逻辑等价性</h3>
+<ul>
+<li><strong>软件的特点</strong>： 易于实现各种逻辑和运算功能，但是常受到速度指标和软件容量的制约</li>
+<li><strong>硬件的特点</strong>： 可以高速实现逻辑和运算功能，但是难以实现复杂功能或计算，受到控制复杂性的制约。<br>
+计算机中的软件，理论上都可以&quot;固化&quot;或&quot;硬化&quot;成硬件，以高执行速度。</li>
+</ul>
+<h2 id="14-计算机系统的性能指标">1.4 计算机系统的性能指标</h2>
+<h3 id="141-基本字长">1.4.1 基本字长</h3>
+<ul>
+<li>指一次数据操作的基本位数。</li>
+<li>它会影响计算的精度、指令的功能。<br>
+一般4，8，16，32，64位等等。</li>
+</ul>
+<h3 id="142-外频">1.4.2 外频</h3>
+<ul>
+<li>外频的概念： 外部频率或基频，也叫做系统时钟评率。
+<img src="/image/img_17.png" alt="img_17.png"></li>
+</ul>
+<h3 id="143-常用的cpu性能指标">1.4.3 常用的CPU性能指标</h3>
+<ol>
+<li>CPU的主频 = 外频 * 倍频系数</li>
+<li>IPS，每秒执行指令数</li>
+<li>CPI，即Clock-cycle Per Instruction</li>
+<li>FLOPS, 每秒执行浮点运算的次数</li>
+<li>CPU的功耗<br>
+动态功耗：  P = C * U*U * f      C:负载电容   U: 工作电压   f: 工作频率</li>
+</ol>
+<h3 id="144-数据传输率">1.4.4 数据传输率</h3>
+<p>带框 = 位宽 * 工作频率 / 8   （B/s）<br>
+<strong>物理含义</strong>： 单位时间内数据的传输量。<br>
+注意：计算PCI-E总线的带宽时，一般还要考虑编码方式、单双工模式和通道路数等</p>
+<p><strong>【例题】</strong><br>
+<img src="/image/img_18.png" alt="img_18.png"></p>
+<h3 id="145-存储器的容量">1.4.5 存储器的容量</h3>
+<ul>
+<li>内存（主存）容量 = 指可编址的存储单元个数（取决于地址码位数） * 存储单元的位宽（表明编址单位）</li>
+<li>外存（辅存）容量 ： 指存储器能存储的最大数据量；<br>
+常表示为： Byte、KB、MB、GB、TB，外存容量与总线地址码的位数无关</li>
+</ul>
+<p><strong>习题</strong>
+<img src="/image/img_jsjzcyl19.png" alt="img.png"></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

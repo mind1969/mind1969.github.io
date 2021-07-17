@@ -6,15 +6,122 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jun 2021 02:25:54 +0800</lastBuildDate><atom:link href="https://mind1969.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jul 2021 15:50:23 +0800</lastBuildDate><atom:link href="https://mind1969.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
+      <title>计算机组成原理</title>
+      <link>https://mind1969.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Sat, 17 Jul 2021 15:50:23 +0800</pubDate>
+      
+      <guid>https://mind1969.github.io/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</guid>
+      <description>第一章 概论 1.1 计算机的基本概念 电子计算机————是一种可以存储程序,并且通过执行程序指令，可以自动、高速、精确地对数字信息进行各种复杂处理，然后输出运算结果的高科技智能电子设备。
+5个逻辑模块： 1.1.1 信息的数字化表示 1.在计算机中用数字代码（二进制代码）表示各种信息 例1 用数字代码表示数据
+5 表示为 0 101
+-5 表示为 1 101
+例2 用数字代码表示字符
+A 表示为 01000001
+B 表示为 01000010
+例3 用数字代码表示命令、状态
+启动 表示为 00
+停止 表示为 01
+正在工作 表示为 10 工作结束 表示为 11
+2.在物理机制上用数字信号（数字型电信号）表示数字代码 3.信息数字化表示的优点 （1）物理上易实现信息的表示与存储
+（2）抗干扰能力强，可靠性高
+（3）数值的表示范围大，精度高
+（4）可表示的信息类型广泛
+（5）能用数字逻辑技术进行处理
+因此，计算机中采用二进制形式表示信息
+1.1.2 存储程序工作方式 1.编制程序
+2.存储程序
+3.自动、连续执行程序
+4.输出结果
+计算机的工作流程 1.1.3 计算机的分类 计算机从总体上来说分为两大类：模拟计算机和数字计算机。
+各自主要特点：
+ 模拟计算机：有模拟运算器件构成，处理在时间和数值上连续的模拟量（如：电压、电流等）； 数字计算机：由数字逻辑器件构成，处理离散的数字量  其中数字计算机又可分为：专用计算机和通用计算机
+ 专用机————是以快速、经济和高度集成度为主要指标的特殊计算机，它是针对特定任务设计的计算机，适应性较差（如：工控机、ATM等） 通用机————适应性较高，但是牺牲了效率、速度和经济性，如个人电脑。  按照系统规模和计算能力，也可以分为：巨型机（超算）、大型机 、小型机 、微型机等等</description>
+    </item>
+    
+    <item>
+      <title>React笔记</title>
+      <link>https://mind1969.github.io/post/react%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 03 Jul 2021 15:59:36 +0800</pubDate>
+      
+      <guid>https://mind1969.github.io/post/react%E7%AC%94%E8%AE%B0/</guid>
+      <description>1.react概述 1.1 什么是react react是一个用于构建用户界面的javascript库。
+用户界面：HTML页面（前端）
+React主要用来写html页面，或构建web应用
+如果从MVC角度来看，react仅仅是视图层(V），也就是指负责视图的渲染，而并非提供了完整的M和C的功能.
+react起源于FaceBook的内部项目，后又用来架设Instagrem的网站，并与2013年5月开源
+1.2 react的特点 1.声明式 你只需要描述UI(HTML)看起来式什么样，就跟鞋HTML一样
+React负责渲染UI，并在数据变化时更新UI
+const jsx = &amp;lt;div className=&amp;#39;app&amp;#39;&amp;gt; &amp;lt;h1&amp;gt;hello React!动态变化数据：{count}&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; 2.基于组件  组件是React 组件表示页面中的部分内容 组合，复用多个组件，可以实现完整的页面功能  3.学习一次，随处使用  使用React可以开发WEb应用 使用react可以开发移动端原生应用（react-native) 使用React可以开发VR（虚拟现实）应用（react360)  2.react的基本使用 2.1 react的安装 安装命令
+npm i react react-dom  react包是核心，提供创建元素、组件等功能 react-dom包提供DOM相关功能等  2.2 react的使用 1.引入react和react-dom两个文件
+&amp;lt;script src=&amp;#39;.node_module/react/umd/react.development.js&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;scrtpt src=&amp;#39;.node_module/react-dom/umd/react-dom.development.js&amp;#39;&amp;gt;&amp;lt;/script&amp;gt; 2.创建react元素
+3.渲染react元素到页面中
+&amp;lt;div id=&amp;#39;root&amp;#39;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; const title = React.createElement(&amp;#39;h1&amp;#39;, {title: &amp;#39;我是一个title&amp;#39;}, &amp;#39;Hello React&amp;#39;) //参数1： 元素名称 参数2：元素属性 第三个及其以后的参数：元素的子节点  ReactDOM.</description>
+    </item>
+    
+    <item>
+      <title>Dubbo</title>
+      <link>https://mind1969.github.io/post/dubbo/</link>
+      <pubDate>Mon, 21 Jun 2021 23:41:34 +0800</pubDate>
+      
+      <guid>https://mind1969.github.io/post/dubbo/</guid>
+      <description>一、基础知识 1、分布式基础理论 1、什么事分布式系统？  分布式系统事若干独立计算机的集合，这些计算机对于用户来说就像单个相关系统
+分布式系统（distributed system）是建立在网络之上的软件系统
+随着互联网的发展，网站应用的规模不断扩大，常规的垂直应用架构已无法应对，分布式服务架构以及流动计算架构势在必行，急需一个治理系统确保架构有条不絮的严谨。
+ 2、发展演变 单一应用架构（All in one）&amp;ndash;ORM 当网站流量很小时，只需要一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架（ORM）是关键
+垂直应用架构（Vertical Application）&amp;ndash;MVC 缺点：
+1.界面+业务逻辑的实现分离
+2.应用不可能完全独立，大量的应用之间需要交互
+分布式服务架构（Distributed Service）&amp;ndash;RPC 流动计算架构（Elastic Computing）&amp;ndash;SOA 3、RPC 什么叫RPC RPC是指远程过程调用，是一种进程间通信方式，他是一种技术的思想
+RPC的基本原理 2. Dubbo要解决的需求 </description>
+    </item>
+    
+    <item>
+      <title>踩坑记录</title>
+      <link>https://mind1969.github.io/post/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 21 Jun 2021 00:30:18 +0800</pubDate>
+      
+      <guid>https://mind1969.github.io/post/%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>Git踩坑记录 github无法访问、443、Operation timed out的解决方法 错误原因：在使用vpn翻墙之后，使用git去访问远程仓库的时候，会出现443的错误 解决方案：
+1.为git设置代理
+git config --global https.proxy http://127.0.0.1:1080 git config --global http.proxy http://127.0.0.1:1080 但是上述设置并不能解决问题，git clone/pull/push的时候会报[connect to 127.0.0.1 port 1080: Connection refused]
+2.打开https://github.com.ipaddress.com/ 记录网站中的ip address，140.82.114.4
+3.打开https://fastly.net.ipaddress.com/github.global.ssl.fastly.net#ipinfo 记录网站中的ip address 199.232.69.194
+4.打开https://github.com.ipaddress.com/assets-cdn.github.com 记录ipv4地址 185.199.108.153、 185.199.109.153、 185.199.110.153、 185.199.111.153
+5.在hosts文件中将上述地址记录上去
+140.82.114.4 github.com 199.232.69.194 github.global.ssl.fastly.net 185.199.108.153 assets-cdn.github.com 185.199.109.153 assets-cdn.github.com 185.199.110.153 assets-cdn.github.com 185.199.111.153 assets-cdn.github.co 6.在终端输入以下指令刷新DNS
+sudo killall -HUP mDNSResponder;say DNS cache has been flushed 7.如何上述六个步骤执行之后还是报错，可以如下设置
+git config --global --unset http.proxy git config --global --unset https.</description>
+    </item>
+    
+    <item>
+      <title>如何玩转一个开源项目</title>
+      <link>https://mind1969.github.io/post/%E5%A6%82%E4%BD%95%E7%8E%A9%E8%BD%AC%E4%B8%80%E4%B8%AA%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Sun, 20 Jun 2021 18:30:45 +0800</pubDate>
+      
+      <guid>https://mind1969.github.io/post/%E5%A6%82%E4%BD%95%E7%8E%A9%E8%BD%AC%E4%B8%80%E4%B8%AA%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</guid>
+      <description>1.搞懂开源项目的几大步骤 1.了解项目是干什么的，你有没有兴趣学习，有哪些技术点
+2.很重要一步，把项目给跑起来
+3.阅读项目源码并调试（可结合某个运行起来的功能入手，一个组件一个组件弄熟、看报错、看日志、看打印变量）
+4.自己会改东西，加自己的功能和模块
+2.开源项目案例演示 1.开源项目推荐 halo
+hutool
+piggymetrics
+HanLp
+2.以Halo为例来演示 </description>
+    </item>
+    
+    <item>
+      <title>个人博客搭建</title>
       <link>https://mind1969.github.io/post/blog/</link>
       <pubDate>Mon, 14 Jun 2021 02:25:54 +0800</pubDate>
       
       <guid>https://mind1969.github.io/post/blog/</guid>
       <description>个人博客搭建 安装hugo brew install hugo //安装 hugo -version //查看版本确定是否安装成功 用hugo生成个人博客 hugo new site myblog //生成博客 myblog是文件夹名称 下载并设置主题 主题地址： https://themes.gohugo.io
-cd myblog //进入到博客根目录 git clone XXX 在本地启动个人博客 hugo server -t m10c(主题名) --buildDrafts //在本地启动个人博客 实际来写一篇文章 hugo new post/blog.md //blog.md文件会在 content/post目录下 将个人博客部署到远端服务器 hugo --themes=m10c --baseUrl=&amp;#34;https://mind1969.github.io/&amp;#34; --buildDrafts cd public/ git init git add git commit -m &amp;#34;我的第一次Hugo博客提交&amp;#34; git remote add origin https://github.com/mind1969/mind1969.github.io.git git push -u origin master </description>
+cd myblog //进入到博客根目录 git clone XXX 在本地启动个人博客 hugo server -t m10c(主题名) --buildDrafts //在本地启动个人博客 实际来写一篇文章 hugo new post/blog.md //blog.md文件会在 content/post目录下 将个人博客部署到远端服务器 在github上创建一个仓库，仓库名设置为 【名称小写】.github.io
+hugo --theme=m10c --baseUrl=&amp;#34;https://mind1969.github.io/&amp;#34; --buildDrafts cd public/ git init git add git commit -m &amp;#34;我的第一次Hugo博客提交&amp;#34; git remote add origin https://github.com/mind1969/mind1969.github.io.git git push -u origin master 如果在git push的时候报错可以使用如下设置，设置之后再重新提交
+git config --global --unset http.</description>
     </item>
     
   </channel>
